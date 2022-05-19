@@ -60,23 +60,11 @@
 					"patching_rect" : [ 167.0, 260.0, 100.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"channel" : 1,
-						"gain" : 1.0,
+						"gain" : 0.899999976158142,
 						"name" : "PointOutput"
 					}
 ,
 					"text" : "mlys.point-output"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-24",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 303.0, 532.0, 88.0, 22.0 ],
-					"text" : "normalize~ 0.8"
 				}
 
 			}
@@ -319,22 +307,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 1 ],
-					"order" : 0,
-					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"order" : 1,
-					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-26", 0 ]
 				}
@@ -363,7 +335,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
+					"destination" : [ "obj-6", 1 ],
+					"order" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 1,
 					"source" : [ "obj-5", 0 ]
 				}
 

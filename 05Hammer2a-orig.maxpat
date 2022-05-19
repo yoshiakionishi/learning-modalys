@@ -58,7 +58,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 801.0, 350.0, 125.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "60, 200 1000 60 1000"
 				}
 
@@ -137,23 +136,11 @@
 					"patching_rect" : [ 167.0, 260.0, 168.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"channel" : 1,
-						"gain" : 1.0,
+						"gain" : 0.009999999776483,
 						"name" : "Out"
 					}
 ,
 					"text" : "mlys.point-output @name Out"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-24",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 303.0, 532.0, 88.0, 22.0 ],
-					"text" : "normalize~ 0.8"
 				}
 
 			}
@@ -293,7 +280,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 167.0, 343.0, 65.0, 22.0 ],
+					"patching_rect" : [ 167.0, 326.0, 65.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"angle-mode" : "degree",
 						"multi" : 0,
@@ -403,22 +390,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 1 ],
-					"order" : 0,
-					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"order" : 1,
-					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-26", 0 ]
 				}
@@ -447,7 +418,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
+					"destination" : [ "obj-6", 1 ],
+					"order" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 1,
 					"source" : [ "obj-5", 0 ]
 				}
 
